@@ -9,7 +9,7 @@ public class JavaStream {
 	public static void main(String[] args) {
 
 		// List로부터 스트림을 생성 
-		List<String> list = Arrays.asList("a", "b", "c"); 
+		List<String> list = Arrays.asList("a", "b", "c", "a", "A"); 
 		//Stream<String> listStream = list.stream();
 
 		// 배열로부터 스트림을 생성 
