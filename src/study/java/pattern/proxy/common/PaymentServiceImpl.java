@@ -1,6 +1,6 @@
-package study.java.pattern.proxy;
+package study.java.pattern.proxy.common;
 
-public class PaymentImpl implements Payment{
+public class PaymentServiceImpl implements PaymentService{
 
 	@Override
 	public void pay() {
