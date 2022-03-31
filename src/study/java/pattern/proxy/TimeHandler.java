@@ -14,9 +14,14 @@ public class TimeHandler implements InvocationHandler{
 	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		System.out.println("method cal..[" + new Date() + "]");
-		Object ret = method.invoke(target, args);
-		System.out.println("method end..[" + new Date() + "]");
+		Object ret;
+		if(method.getName() == "pay") {
+			System.out.println("method cal..[" + new Date() + "]");
+			ret = method.invoke(target, args);
+			System.out.println("method end..[" + new Date() + "]");
+		}else {
+			ret = method.invoke(target, args);
+		}
 		return ret;
 	}
 }

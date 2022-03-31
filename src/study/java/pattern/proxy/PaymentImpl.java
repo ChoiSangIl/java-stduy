@@ -7,4 +7,9 @@ public class PaymentImpl implements Payment{
 		System.out.println("pay...");
 	}
 
+	@Override
+	public void cancle() {
+		System.out.println("cancle...");
+	}
+
 }
