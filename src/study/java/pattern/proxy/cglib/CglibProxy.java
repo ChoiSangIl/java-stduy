@@ -1,5 +1,8 @@
 package study.java.pattern.proxy.cglib;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.sf.cglib.proxy.Enhancer;
 import study.java.pattern.proxy.common.PaymentServiceImpl;
 
@@ -17,5 +20,7 @@ public class CglibProxy {
         
         PaymentServiceImpl paymentService = (PaymentServiceImpl) enhancer.create();
         paymentService.pay();
+        
+        List<String> aa = new ArrayList<String>();
 	}
 }
