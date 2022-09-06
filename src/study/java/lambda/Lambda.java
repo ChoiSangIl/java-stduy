@@ -20,7 +20,7 @@ public class Lambda {
 			return "abcdefg";
 		}).caculate());
 
-		// ÀÎÅÍÆäÀÌ½º¸¸ ÀÛ¼ºÇØµÎ°í ±¸ÇöÀº ÀÍ¸íÇÔ¼ö·Î Ã³¸®ÇÏ°Ú´Ù
+		// ì¸í„°íŽ˜ì´ìŠ¤ë§Œ ìž‘ì„±í•´ë‘ê³  êµ¬í˜„ì€ ìµëª…í•¨ìˆ˜ë¡œ ì²˜ë¦¬í•˜ê² ë‹¤
 		MyFunction myfun = (a, b) -> a > b ? a : b;
 		System.out.println(myfun.max(1, 3));
 
@@ -67,7 +67,7 @@ public class Lambda {
 	@FunctionalInterface
 	public static interface MyFunction {
 		public abstract int max(int a, int b);
-		
+
 		public abstract boolean equals(Object obj);
 	}
 }

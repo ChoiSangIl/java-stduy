@@ -40,16 +40,15 @@ public class AnonymousClass {
 		animal.speak();
 		animal.age();
 
-
 		/*
-		 * �� Lamda�Լ��� �������̽� �ȿ� 1���� �־�� �ұ�?
-		 * Animal�̶� Ŭ������ �����Լ��� �Ѵٰ��ϸ� �Ʒ�ó�� �ؾ��ϳ�?
-		 * sepak, age�Լ��� �������� ������� ó�� �� ����� ����.
-		 * �׷��Ƿ� �Ѱ��� function�� �����ؾ��ϴµ�..!
+		 * 왜 Lamda함수는 인터페이스 안에 1개만 있어야 할까?
+		 * Animal이란 클래스를 람다함수로 한다고하면 아래처럼 해야하나?
+		 * sepak, age함수를 람다적인 방법으로 처리 할 방법이 없다.
+		 * 그러므로 한개의 function만 존재해야하는듯..!
 		Animal anima2 = ()->{
-			System.out.println("�۸�");
+			System.out.println("멍멍");
 		}, ()->{
-			System.out.println("10�� �̿���");
+			System.out.println("10살 이에요");
 		}
 		*/
 		
