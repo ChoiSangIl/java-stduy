@@ -2,55 +2,54 @@ package study.java.lambda;
 
 public class AnonymousClass {
 	public static void main(String[] args) {
-		
-		//ÀÍ¸í Å¬·¡½º (abstract)
+
 		Person person = new Person() {
 			int age = 10;
 			@Override
 			void speak() {
-				System.out.println("³ª´Â ¼Ò¸® Ä¥ ¼ö ÀÖ´Ù!");
+				System.out.println("ë‚˜ëŠ” ì‚¬ëžŒì´ë‹¤!");
 			}
 			
 			@Override
 			void age() {
-				System.out.println(age +"»ì ÀÔ´Ï´Ù.");
+				System.out.println(age +"ì‚´ì´ë‹¤");
 				this.sex();
 			}
 			
 			void sex() {
-				System.out.println("Àú´Â ³²ÀÚÀÔ´Ï´Ù.");
+				System.out.println("ë‚¨ìžì´ë‹¤!");
 			}
 		};
 		
 		person.speak();
 		person.age();
-		//person.sex(); error ¹ß»ý
-		
-		//ÀÍ¸í Å¬·¡½º (interface)
+		//person.sex(); error ë°œìƒ ì™œ? ìµëª…í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ë•Œ ìƒì„±ëœ í•¨ìˆ˜ì´ë¯€ë¡œ ì ‘ê·¼ ë¶ˆê°€!
+
 		Animal animal = new Animal() {
 			@Override
 			public void speak() {
-				System.out.println("¸Û¸Û");
+				System.out.println("ìŒë§¤");
 			}
 			
 			@Override
 			public void age() {
-				System.out.println("10»ì ÀÌ¿¡¿ä");
+				System.out.println("10ì‚´ ìž…ë‹ˆë‹¤");
 			}
 		};
 		
 		animal.speak();
 		animal.age();
-		
+
+
 		/*
-		 * ¿Ö LamdaÇÔ¼ö´Â ÀÎÅÍÆäÀÌ½º ¾È¿¡ 1°³¸¸ ÀÖ¾î¾ß ÇÒ±î? 
-		 * AnimalÀÌ¶õ Å¬·¡½º¸¦ ¶÷´ÙÇÔ¼ö·Î ÇÑ´Ù°íÇÏ¸é ¾Æ·¡Ã³·³ ÇØ¾ßÇÏ³ª?
-		 * sepak, ageÇÔ¼ö¸¦ ¶÷´ÙÀûÀÎ ¹æ¹ýÀ¸·Î Ã³¸® ÇÒ ¹æ¹ýÀÌ ¾ø´Ù.
-		 * ±×·¯¹Ç·Î ÇÑ°³ÀÇ function¸¸ Á¸ÀçÇØ¾ßÇÏ´Âµí..!
+		 * ï¿½ï¿½ Lamdaï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½È¿ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ ï¿½Ò±ï¿½?
+		 * Animalï¿½Ì¶ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½Ñ´Ù°ï¿½ï¿½Ï¸ï¿½ ï¿½Æ·ï¿½Ã³ï¿½ï¿½ ï¿½Ø¾ï¿½ï¿½Ï³ï¿½?
+		 * sepak, ageï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+		 * ï¿½×·ï¿½ï¿½Ç·ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½ functionï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½Ï´Âµï¿½..!
 		Animal anima2 = ()->{
-			System.out.println("¸Û¸Û");
+			System.out.println("ï¿½Û¸ï¿½");
 		}, ()->{
-			System.out.println("10»ì ÀÌ¿¡¿ä");
+			System.out.println("10ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½");
 		}
 		*/
 		

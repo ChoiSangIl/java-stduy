@@ -1,4 +1,4 @@
-package study.java;
+package study.java.stream;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,13 +8,13 @@ public class JavaStream {
 
 	public static void main(String[] args) {
 
-		// List·ÎºÎÅÍ ½ºÆ®¸²À» »ý¼º 
+		// Listï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 		List<String> list = Arrays.asList("a", "b", "c", "a", "A"); 
 		//Stream<String> listStream = list.stream();
 
-		// ¹è¿­·ÎºÎÅÍ ½ºÆ®¸²À» »ý¼º 
+		// ï¿½è¿­ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 		//Stream<String> arrayStream = Stream.of("a", "b", "c"); 
-		//°¡º¯ÀÎÀÚ Stream<String> 
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Stream<String> 
 		//stream = Stream.of(new String[] {"a", "b", "c"}); 
 		//Stream<String> stream = Arrays.stream(new String[] {"a", "b", "c"}); 
 		//Stream<String> stream = Arrays.stream(new String[] {"a", "b", "c"}, 0, 3); 

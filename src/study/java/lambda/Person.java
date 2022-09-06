@@ -4,7 +4,6 @@ public abstract class Person {
 	abstract void age();
 	
 	void speak() {
-		System.out.println("³ª´Â »ç¶÷ÀÌ´Ù.");
+		System.out.println("ë‚˜ëŠ” ë§ì„ í•  ìˆ˜ ìˆë‹¤.");
 	}
-	
 }
